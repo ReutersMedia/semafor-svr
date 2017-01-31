@@ -15,10 +15,8 @@ semafor-api:
     FRAMEPARSER_HOST: frameparser
     FRAMEPARSER_PORT: 8085
     LOG_LEVEL: INFO
-  volumes:
-    - /Users/U0136093/gitlab/rfact/semafor3/semafor-api/src/semafor3:/usr/lib/python3.5/site-packages/semafor3
 semafor-frameparser:
-  image: reutersmedia/semafor-api:latest
+  image: reutersmedia/semafor-frameparser:latest
   mem_limit: 4400000000
   cpu_shares: 128
   expose:
