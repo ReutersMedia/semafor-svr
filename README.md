@@ -10,6 +10,12 @@ There are three containers:
 * semafor-frameparser:  Runs the frame extraction server.
 * semafor-api:  A Flask web service that accepts a body of text via HTTP POST and returns it's JSON representation of marked-up frames.  It also performs some text pre-processing, first applies the NLTK Punkt sentence tokenizer to each line, and then the MaltParser for syntactic dependencies.
 
+To pull the images:
+
+```
+$ docker pull reutersmedia/semafor-frameparser:latest
+$ docker pull reutersmedia/semafor-api:latest
+```
 
 ## Running
 
