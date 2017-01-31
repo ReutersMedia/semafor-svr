@@ -98,8 +98,6 @@ def parse_frames():
         
 @application.route("/keepalive",methods=['GET'])
 def keepalive():
-    # check refresh user/channel data
-    get_data()
     return "OK"
 
 
